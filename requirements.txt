@@ -1,6 +1,0 @@
-tensorflow
-flask
-numpy
-opencv-python
-matplotlib
-Pillow
