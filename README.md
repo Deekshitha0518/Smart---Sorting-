@@ -50,3 +50,5 @@ SmartShorting/
 - Flask (for web interface)
 - OpenCV & NumPy (for image processing)
 - Matplotlib (for data visualization during training)
+
+TEAM MEMBER/LEADER : DEEKSHITHA
