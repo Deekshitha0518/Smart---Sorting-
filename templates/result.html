@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f9f9f9;
+        }
+        .box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        .image-preview {
+            max-width: 300px;
+            margin-top: 30px;
+        }
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Prediction Result</h1>
+        <div class="result">{{ prediction_text }}</div>
+
+        {% if image_path %}
+            <img src="{{ image_path }}" alt="Uploaded Image" class="image-preview">
+        {% endif %}
+
+        <br>
+        <a href="/" class="back-button">Try Another Image</a>
+    </div>
+</body>
+</html>
